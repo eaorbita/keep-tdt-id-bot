@@ -35,7 +35,7 @@ def listener(messages):
 @bot.message_handler(commands=help_commands)
 def to_main_menu(message):
     help_msg = '''This is simple Telegram bot to demonstrate one of the possibilities Keep Indexer (https://github.com/fedorov-m/KeepIndexer)
-More information can be found on GitHub: placeholder
+More information can be found on GitHub: https://github.com/c29r3/keep-tdt-id-bot
 '''
     bot.send_message(message.chat.id, help_msg, disable_web_page_preview=True, reply_markup=main_menu)
 
